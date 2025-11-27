@@ -72,9 +72,8 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Drivers", text: "Automatic crash detection for peace of mind on the road.", img: "https://picsum.photos/id/183/800/600" },
-              { title: "Elders", text: "Simple SOS button for falls or medical emergencies.", img: "https://picsum.photos/id/339/800/600" },
+              { title: "Elders", text: "Simple SOS button for falls or medical emergencies.", img: "https://i.ibb.co/twnsfQ8n/wmremove-transformed.jpg" },
               { title: "Solo Travelers", text: "GPS tracking for hikers and adventurers off the grid.", img: "https://picsum.photos/id/1036/800/600" },
-              { title: "Children", text: "Real-time location monitoring for parents.", img: "https://picsum.photos/id/349/800/600" }
             ].map((useCase, idx) => (
               <div key={idx} className="relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer">
                 <img 

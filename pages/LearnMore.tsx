@@ -308,7 +308,7 @@ const LearnMore: React.FC = () => {
           alt="ResQLink Device" 
           className="lm-hero-image"
           onError={(e) => {
-            (e.target as HTMLImageElement).src = 'https://picsum.photos/id/201/1200/600';
+            (e.target as HTMLImageElement).src = 'https://i.ibb.co/XrhPmLBV/freepik-expand-11827.png';
           }}
         />
       </section>
@@ -404,11 +404,10 @@ const LearnMore: React.FC = () => {
           <div className="lm-features-grid">
             {[
               "Instant SOS Alerts",
-              "Real-time Location Sharing",
               "Crash Detection Algorithm",
-              "Lightweight (45g)",
-              "Waterproof (IP68)",
-              "7-Day Active Tracking",
+              "Lightweight (100g)",
+              "Waterproof (IP67)",
+              "24x7 Active Tracking",
               "Smart Fall Detection",
               "Global Coverage"
             ].map((feat, i) => (
@@ -429,12 +428,12 @@ const LearnMore: React.FC = () => {
           <h2 className="lm-section-title">Frequency Asked Questions</h2>
           <div className="lm-faq-container">
             {[
-              { q: "How does ResQLink detect emergencies?", a: "It uses a custom algorithm combining data from the accelerometer and gyroscope to identify sudden stops or high-G impacts typical of accidents." },
-              { q: "Do I need internet or SIM?", a: "ResQLink has an embedded eSIM that connects to multiple cellular networks. A basic subscription is required for data transmission." },
-              { q: "How long does the battery last?", a: "The device features a non-rechargeable battery designed to last up to 2 years on standby or 7 days in active tracking mode." },
-              { q: "Is it waterproof?", a: "Yes, it is IP68 rated, meaning it can withstand submersion in 1.5 meters of water for up to 30 minutes." },
-              { q: "Does it work while driving?", a: "Yes, it is specifically designed to distinguish between normal driving vibrations and crash impacts." },
-              { q: "What happens after SOS activates?", a: "Your emergency contacts receive an SMS with your location, and local emergency services are notified via our data center." }
+              { q: "How does ResQLink detect emergencies?", a: "ResQLink uses a multi-sensor detection algorithm that processes continuous data from its accelerometer and gyroscope. When it detects abnormal patterns such as sudden deceleration, high-G impact, or a fall-like motion, the system automatically triggers an SOS sequence." },
+              { q: "Do I need internet or SIM?", a: "No. ResQLink works on LoRa Mesh technology, which allows communication without SIM, data, or internet." },
+              { q: "How long does the battery last?", a: "Up to 5–7 days on a single charge, depending on usage." },
+              { q: "Is it waterproof?", a: "Yes, it is IP67 rated, meaning it survives 1 m water immersion for 30 minutes." },
+              { q: "Does it work while driving?", a: "Yes. It can differentiate between normal driving vibrations and real crash forces." },
+              { q: "What happens after SOS activates?", a: "An alert with your location is sent through the LoRa Mesh network to the base station and your emergency contacts." }
             ].map((item, index) => (
               <div key={index} className="lm-faq-item">
                 <button 
